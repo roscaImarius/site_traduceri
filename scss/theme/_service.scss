@@ -1,0 +1,134 @@
+/*--------------------------------------------------------------
+# Services CSS
+--------------------------------------------------------------*/
+
+.services-area {
+  margin-top: -50px;
+  background: $white;
+  .v-box {
+    margin-top: -120px;
+    height: 1050px;
+    @media (max-width: 1024px) {
+      height: 1025px;
+    }
+    .text {
+      font-size: 124px;
+      top: 12%;
+      left: -44%;
+    }
+  }
+  .statistics-single {
+    padding: 40px 20px;
+    .number {
+      margin-bottom: 30px;
+    }
+    .desc {
+      color: $title-color;
+      font-size: 18px;
+    }
+    p {
+      display: none;
+      @include transition();
+    }
+    &:hover {
+      .number {
+        display: none;
+      }
+      .desc {
+        color: $primary-color4-2;
+        font-size: 24px;
+        transform: translateY(-20px);
+      }
+      p {
+        display: block;
+        margin: 0;
+      }
+    }
+  }
+  .statistics-single1 {
+    background: url(../img/service/icon-bg1.png);
+  }
+  .statistics-single2 {
+    background: url(../img/service/icon-bg2.png);
+  }
+  .statistics-single3 {
+    background: url(../img/service/icon-bg3.png);
+  }
+  .statistics-single4 {
+    background: url(../img/service/icon-bg4.png);
+  }
+  .quote-form {
+    .col-lg-8,
+    .col-lg-4 {
+      padding: 0;
+    }
+    .form-group {
+      margin-bottom: 0;
+    }
+    .form-control {
+      height: 100px;
+      line-height: 100px;
+      border: 0px;
+      background: #f9fcff;
+      padding: 0px 30px;
+      color: $title-color;
+    }
+    .quote-btn {
+      height: 100px;
+      line-height: 100px;
+      background: $primary-color4-2;
+      border-radius: 0px;
+      font-size: 14px;
+      padding: 0px;
+      min-width: 223px;
+      color: $white;
+      @include transition();
+      .lnr-arrow-right {
+        font-size: 42px;
+        position: absolute;
+        left: -40px;
+        top: 32px;
+        opacity: 0;
+        color: #000;
+        @include transition();
+      }
+      &:hover {
+        color: $title-color;
+        .lnr-arrow-right {
+          left: 20px;
+          opacity: 1;
+        }
+      }
+      @media (max-width: 767px) {
+        height: 60px;
+        line-height: 60px;
+        margin-top: 12px;
+      }
+    }
+    ::-webkit-input-placeholder {
+      /* WebKit, Blink, Edge */
+      color: $title-color;
+      font-weight: 400;
+    }
+    :-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: $title-color;
+      font-weight: 400;
+    }
+    ::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: $title-color;
+      font-weight: 400;
+    }
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: $title-color;
+      font-weight: 400;
+    }
+    ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: $title-color;
+      font-weight: 400;
+    }
+  }
+}

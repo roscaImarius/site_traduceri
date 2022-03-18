@@ -1,0 +1,825 @@
+/*--------------------------------------------------------------
+# Elements 
+--------------------------------------------------------------*/
+
+.no-js #loader {
+  display: none;
+}
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../img/preloader.gif) center no-repeat $white;
+}
+
+.v4-icon-circle {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  @include transition();
+}
+
+.section-gap {
+  padding: 120px 0;
+  @media (max-width: 1440px) {
+    padding: 95px 0px;
+  }
+  @media (max-width: 991px) {
+    padding: 60px 0px !important;
+  }
+}
+
+.section-gap-top-5 {
+  padding-top: 280px;
+  @media (max-width: 991px) {
+    padding-top: 60px;
+  }
+}
+
+.section-gap-top {
+  padding-top: 120px;
+  @media (max-width: 991px) {
+    padding-top: 60px;
+  }
+}
+
+.section-gap-bottom {
+  padding-bottom: 120px;
+  @media (max-width: 991px) {
+    padding-bottom: 60px;
+  }
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#back-top {
+  position: fixed;
+  right: -5%;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 9999999;
+  opacity: 0;
+  a {
+    @extend .gradient-bg;
+    display: block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    padding: 8px;
+    @include transition(all 0.3s ease-in-out 0s);
+    i {
+      font-size: 22px;
+      color: $white;
+    }
+    &:hover {
+      box-shadow: 0 8px 12px $gray-color;
+    }
+  }
+}
+
+.back-top-animation {
+  right: 2% !important;
+  opacity: 1 !important;
+  @include transition(all 0.5s ease-in !important);
+}
+
+.v1-box-shadow {
+  box-shadow: -14px 14px 21px $gray-color;
+}
+
+.gradient-bg {
+  background: $primary-color;
+  @include gradient(270deg, $primary-color2-1 10%, $primary-color 100%);
+}
+
+.gradient-bg-reverse {
+  background: $primary-color2-1;
+  @include gradient(270deg, $primary-color 10%, $primary-color2-1 100%);
+}
+
+.t5-gradient-bg {
+  background: $primary-color5-2;
+  @include gradient(45deg, $primary-color5-2 0%, $primary-color5-1 100%);
+}
+
+.t5-gradient-bg-reverse {
+  background: $primary-color5-1;
+  @include gradient(45deg, $primary-color5-1 10%, $primary-color5-2 100%);
+}
+
+.t5-gradient-bg-left {
+  background: $primary-color5-2;
+  @include gradient(90deg, $primary-color5-2 10%, $primary-color5-1 100%);
+}
+
+.genric-btn {
+  color: $white;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  max-width: 100%;
+  padding: 9px 48px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 0;
+  cursor: pointer;
+  @include transition(all 0.3s ease-in 0s);
+  border-radius: 50px;
+  @extend .gradient-bg;
+  &:hover {
+    color: $white;
+    box-shadow: -14px 14px 21px $gray-color;
+  }
+}
+
+.genric-btn2 {
+  background: $white;
+  color: $black;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  max-width: 100%;
+  padding: 8px 48px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 0;
+  cursor: pointer;
+  @include transition(all 0.3s ease-in 0s);
+  border-radius: 50px;
+  &:hover {
+    color: $black;
+    box-shadow: -8px 8px 33px rgba(101, 101, 101, 0.36);
+  }
+}
+
+.genric-btn3 {
+  background: $white;
+  color: $primary-color3-2;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  max-width: 100%;
+  padding: 8px 48px;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 0;
+  cursor: pointer;
+  @include transition(all 0.3s ease-in 0s);
+  box-shadow: -15px 15px 25px rgba(34, 34, 34, 0.5);
+  &:hover {
+    color: $black;
+    box-shadow: none;
+  }
+}
+
+.genric-btn4 {
+  color: $white;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  max-width: 100%;
+  padding: 8px 48px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 0;
+  cursor: pointer;
+  @include transition(all 0.3s ease-in-out 0s);
+  box-shadow: -15px 15px 20px rgba(114, 113, 113, 0.2);
+  @extend .t5-gradient-bg;
+  background-position: right center;
+  &:hover {
+    box-shadow: none;
+    @extend .t5-gradient-bg-reverse;
+    background-size: 200% auto;
+  }
+}
+
+.pagination-box {
+  margin-top: 100px;
+  @media (max-width: 991px) {
+    margin-top: 30px;
+  }
+  .pagination {
+    margin-bottom: 0px;
+    border-radius: 0px;
+    .page-item {
+      .page-link {
+        height: 30px;
+        width: 30px;
+        background: transparent !important;
+        padding: 0px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 0px !important;
+        font-size: 14px;
+        color: #8a8a8a;
+        font-weight: normal;
+        border: 0px;
+        &:focus {
+          box-shadow: none !important;
+          outline: none !important;
+        }
+        i {
+          padding: 8px 0;
+        }
+      }
+      &.blank {
+        .page-link {
+          background: transparent;
+          color: #cccccc;
+          border: none;
+        }
+      }
+      &:hover,
+      &.active {
+        .page-link {
+          background: $title-color !important;
+          color: $white !important;
+          border-color: $title-color !important;
+        }
+      }
+    }
+  }
+}
+
+/* ############# Start Version1 Elements CSS ############# */
+
+.version1 {
+  .mfp-img {
+    background: $white;
+    padding: 40px;
+  }
+  .mfp-bottom-bar {
+    margin-top: 0;
+  }
+  .heading {
+    font-size: 72px;
+    font-weight: 800;
+    text-transform: capitalize;
+    @media (max-width: 1024px) {
+      font-size: 52px;
+    }
+    @media (max-width: 991px) {
+      font-size: 42px;
+      padding: 0 16px;
+    }
+    @media (max-width: 420px) {
+      font-size: 30px;
+    }
+  }
+  .zigzag {
+    min-height: 90px;
+    -webkit-mask: url(../img/top-home-banner.svg) no-repeat center;
+    -moz-mask: url(../img/top-home-banner.svg) no-repeat center;
+    -o-mask: url(../img/top-home-banner.svg) no-repeat center;
+    mask: url(../img/top-home-banner.svg) no-repeat center;
+  }
+  .zigzag-downside {
+    @extend .zigzag;
+    background-color: $white;
+    position: relative;
+    z-index: 2;
+    transform: rotate(180deg);
+    top: -30px;
+  }
+  .zigzag-upside-gray {
+    @extend .zigzag;
+    background-color: #fafaff;
+    background-image: linear-gradient(to bottom, $white 0%, #fafaff 100%);
+    -webkit-background-image: linear-gradient(
+      to bottom,
+      $white 0%,
+      #fafaff 100%
+    );
+    -moz-background-image: linear-gradient(to bottom, $white 0%, #fafaff 100%);
+    -o-background-image: linear-gradient(to bottom, $white 0%, #fafaff 100%);
+    @include transform(rotate(180deg));
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .zigzag-downside-gray {
+    @extend .zigzag;
+    background-color: #fbfbff;
+    background-image: linear-gradient(to bottom, $white 0%, #fafaff 100%);
+    -webkit-background-image: linear-gradient(
+      to bottom,
+      $white 0%,
+      #fafaff 100%
+    );
+    -moz-background-image: linear-gradient(to bottom, $white 0%, #fafaff 100%);
+    -o-background-image: linear-gradient(to bottom, $white 0%, #fafaff 100%);
+    position: relative;
+    z-index: 2;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .zigzag-downside-grad {
+    @extend .zigzag;
+    background-color: #fbfbff;
+    @extend .gradient-bg;
+    position: relative;
+    z-index: 2;
+    top: -30px;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .hire-me {
+    @extend .gradient-bg;
+    min-height: 335px;
+    position: relative;
+    margin-top: 150px;
+    @media (max-width: 1440px) {
+      margin-top: 130px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: -93px;
+      left: 0;
+      height: 100px;
+      width: 100%;
+      @extend .zigzag;
+      background-color: #fafaff;
+      @include gradient(270deg, #f41863 0%, #fcc415 90%);
+      @include transform(rotate(180deg));
+    }
+    @media (max-width: 991px) {
+      background-size: cover;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hire-img {
+      position: absolute;
+      right: 7%;
+      bottom: -2%;
+      @include transform(translate(-50%));
+      @media (max-width: 991px) {
+        display: none;
+      }
+      @media (max-width: 1440px) {
+        bottom: -7%;
+        right: -13%;
+      }
+      @media (max-width: 1024px) {
+        right: -23%;
+      }
+    }
+    .hire-head {
+      font-size: 60px;
+      color: white;
+      margin-bottom: 50px;
+      font-weight: 900;
+      @media (max-width: 1024px) {
+        font-size: 45px;
+      }
+      @media (max-width: 991px) {
+        font-size: 32px;
+      }
+      @media (max-width: 576px) {
+        font-size: 28px;
+      }
+    }
+    .genric-btn2 {
+      font-weight: 700;
+      box-shadow: -8px 8px 33px rgba(101, 101, 101, 0.36);
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+/* ############# End Version1 Elements CSS ############# */
+
+/* ############# Start Version3 Elements CSS ############# */
+
+.version3 {
+  .genric-btn3 {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .heading {
+    font-size: 90px;
+    font-weight: 800;
+    text-shadow: -15px 15px 25px rgba(174, 174, 174, 0.5);
+    text-transform: capitalize;
+    @media (max-width: 1440px) {
+      font-size: 62px;
+      line-height: 80px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 58px;
+      line-height: 60px;
+    }
+    @media (max-width: 768px) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @media (max-width: 576px) {
+      font-size: 35px !important;
+      line-height: 35px !important;
+    }
+    .fname {
+      color: $primary-color3-1;
+    }
+    .lname {
+      color: $primary-color3-2;
+    }
+  }
+  .section-container {
+    padding-left: 8%;
+    padding-right: 8%;
+    @media (max-width: 1440px) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+  .shape {
+    position: absolute;
+    z-index: 100;
+    width: 100px;
+    height: 100px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .shapes .shape.shape1 {
+    background: url(../img/banner/shape3-1.png) no-repeat;
+    left: 79%;
+    top: 81%;
+  }
+  .shapes .shape.shape2 {
+    background: url(../img/banner/shape3-2.png) no-repeat;
+    left: 4%;
+    top: 67%;
+  }
+  .shapes .shape.shape3 {
+    background: url(../img/banner/shape3-3.png) no-repeat;
+    left: 5%;
+    top: 14%;
+  }
+  .shapes .shape.shape4 {
+    background: url(../img/banner/shape3-4.png) no-repeat;
+    left: 49%;
+    top: 25%;
+  }
+  .shapes .shape.shape5 {
+    background: url(../img/banner/shape3-5.png) no-repeat;
+    left: 58%;
+    top: 77%;
+  }
+  .shapes .shape.shape6 {
+    background: url(../img/banner/shape3-6.png) no-repeat;
+    left: 64%;
+    top: 14%;
+  }
+  .shapes .shape.shape7 {
+    background: url(../img/banner/shape3-7.png) no-repeat;
+    left: 3%;
+    top: 59%;
+  }
+  .shapes .shape.shape8 {
+    background: url(../img/banner/shape3-8.png) no-repeat;
+    left: 46%;
+    top: 71%;
+  }
+  .shapes .shape.shape9 {
+    background: url(../img/banner/shape3-9.png) no-repeat;
+    left: 79%;
+    top: 81%;
+  }
+  .shapes .shape.shape10 {
+    background: url(../img/banner/shape3-10.png) no-repeat;
+    left: 88%;
+    top: 42%;
+  }
+  .shapes .shape.shape11 {
+    background: url(../img/banner/shape3-11.png) no-repeat;
+    left: 5%;
+    top: 14%;
+  }
+}
+
+/* ############# End Version3 Elements CSS ############# */
+
+/* ############# Start Version4 Elements CSS ############# */
+
+.version4 {
+  .heading {
+    font-size: 48px;
+    font-weight: 600;
+    @media (max-width: 991px) {
+      font-size: 36px;
+    }
+    @media (max-width: 576px) {
+      font-size: 30px;
+    }
+  }
+  .h-box {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      width: 97%;
+      height: 33px;
+      left: 12px;
+      z-index: -1;
+      background: $primary-color4-2;
+      @media (max-width: 576px) {
+        width: 50%;
+      }
+    }
+  }
+  .v-box {
+    background: url(../img/box-bg-4.png) no-repeat center;
+    max-width: 260px;
+    min-height: 650px;
+    position: relative;
+    z-index: 10;
+    @media (max-width: 991px) {
+      background: none !important;
+      height: 80px !important;
+      margin: auto;
+      margin-bottom: 25px;
+      width: auto;
+      min-height: auto !important;
+      margin-top: 0 !important;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      &:after {
+        content: "";
+        position: absolute;
+        background: $primary-color4-2;
+        width: 100px;
+        height: 3px;
+        left: 50%;
+        @include transform(translateX(-50%));
+      }
+    }
+    .text {
+      @include transform(rotate(270deg) translate(-50%, -50%));
+      font-size: 200px;
+      font-weight: 600;
+      position: absolute;
+      top: -6%;
+      left: -4%;
+      color: $white;
+      @media (max-width: 991px) {
+        font-size: 50px !important;
+        position: initial;
+        color: $title-color;
+        @include transform(rotate(0deg) !important);
+      }
+      @media (max-width: 480px) {
+        font-size: 35px !important;
+      }
+    }
+  }
+}
+
+/* ############# End Version4 Elements CSS ############# */
+
+/* ############# Start Version5 Elements CSS ############# */
+
+.version5 {
+  .row {
+    @media (max-width: 991px) {
+      padding: 0px 40px;
+    }
+    @media (max-width: 576px) {
+      padding: 0px;
+    }
+  }
+  #back-top {
+    a {
+      @extend .t5-gradient-bg;
+    }
+  }
+  .heading {
+    font-size: 100px;
+    font-weight: 800;
+    @extend .t5-gradient-bg-left;
+    color: transparent;
+    -webkit-background-clip: text !important;
+    background-clip: text;
+    text-shadow: -15px 15px 30px rgba(176, 176, 176, 0.5);
+    @media (max-width: 1440px) and (min-width: 1200px) {
+      font-size: 70px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 50px;
+    }
+    @media (max-width: 991px) {
+      font-size: 35px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+  }
+  .left-side {
+    background: url(../img/bg-left-5.png) no-repeat center;
+    background-size: contain;
+    position: relative;
+    min-height: 1363px;
+    margin-left: -105px;
+    @media (max-width: 1890px) and (min-width: 1200px) {
+      background-position: 0;
+    }
+    @media (max-width: 1200px) and (min-width: 992px) {
+      background-size: auto;
+    }
+    @media (max-width: 991px) {
+      background: $primary-color5-2;
+      min-height: 80px;
+      margin-left: 0px;
+    }
+    @media (max-width: 768px) {
+      min-height: 50px !important;
+    }
+  }
+  .right-side {
+    background: url(../img/bg-right-5.png) no-repeat center;
+    position: relative;
+    min-height: 1363px;
+    margin-left: 105px;
+    @media (max-width: 1890px) and (min-width: 1200px) {
+      background-position: initial !important;
+    }
+    @media (max-width: 991px) {
+      background: $primary-color5-2;
+      min-height: 80px;
+      margin-left: 0px;
+    }
+    @media (max-width: 768px) {
+      min-height: 50px !important;
+    }
+  }
+  .right-heading {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    top: 30%;
+    left: 34%;
+    text-shadow: -15px 15px 30px rgba(34, 34, 34, 0.4);
+    @include transform(translate(-50%, -50%));
+    @media (max-width: 1440px) and (min-width: 1200px) {
+      font-size: 70px;
+    }
+    @media (max-width: 1200px) and (min-width: 1024px) {
+      font-size: 50px;
+    }
+    @media (max-width: 991px) {
+      font-size: 40px;
+      top: 50%;
+      left: 50%;
+    }
+  }
+  .left-heading {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    top: 68%;
+    right: 0;
+    text-shadow: -15px 15px 30px rgba(34, 34, 34, 0.4);
+    @include transform(translate(-50%, -50%));
+    @media (max-width: 1440px) and (min-width: 1200px) {
+      font-size: 70px;
+      top: 66%;
+      right: -12%;
+    }
+    @media (max-width: 1200px) and (min-width: 1024px) {
+      font-size: 50px;
+    }
+    @media (max-width: 991px) {
+      font-size: 40px;
+      top: 47%;
+      right: 33%;
+    }
+    @media (max-width: 991px) {
+      right: 23%;
+    }
+    @media (max-width: 576px) {
+      right: 14%;
+    }
+    @media (max-width: 420px) {
+      right: 7%;
+    }
+    @media (max-width: 320px) {
+      right: -2% !important;
+    }
+  }
+  .owl-dots {
+    @include flexbox();
+    @include justify-content(center);
+    position: relative;
+    @include transition();
+    @media (max-width: 991px) {
+      display: none !important;
+    }
+    &:after {
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 20%;
+      height: 5px;
+      background: $white;
+      z-index: -1;
+      @include transition();
+    }
+    .owl-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #dddddd;
+      margin: 0 50px;
+      @include transition();
+      @media (max-width: 991px) {
+        margin: 0 15px;
+      }
+      @media (max-width: 1440px) {
+        margin: 20px;
+        &.active {
+          &:after {
+            width: 100px !important;
+          }
+        }
+      }
+      &:after {
+        content: "";
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        width: 55%;
+        height: 4px;
+        background: #cccccc;
+        @include transform(translate(-50%, -50%));
+        @include transition();
+      }
+      &.active {
+        background: $primary-color5-1;
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+        position: relative;
+        z-index: 2888880;
+        &:after {
+          background: $primary-color5-2;
+          width: 115px;
+          z-index: 10;
+        }
+      }
+    }
+  }
+}
+
+/* ############# End Version5 Elements CSS ############# */

@@ -1,0 +1,562 @@
+/*--------------------------------------------------------------
+# Experience CSS
+--------------------------------------------------------------*/
+
+/* ############# Start Version1 Experience CSS ############# */
+
+.version1 {
+  .wexp {
+    padding: 225px 0 638px;
+    @media (max-width: 1024px) {
+      padding: 35px 0px 30px;
+    }
+    @media (max-width: 991px) {
+      padding: 0px;
+    }
+    .heading {
+      @media (max-width: 991px) {
+        padding: 0px 15px 20px;
+      }
+    }
+    .academic-head {
+      position: absolute;
+      bottom: 7%;
+      @include transform(translateY(-50%));
+      @media (max-width: 1199px) {
+        position: relative;
+        margin-top: 100px;
+      }
+    }
+    .wexp-angle {
+      @include transform(rotate(45deg));
+      @media (max-width: 1199px) {
+        -webkit-transform: rotate(0deg) !important;
+        -moz-transform: rotate(0deg) !important;
+        -ms-transform: rotate(0deg) !important;
+        -o-transform: rotate(0deg) !important;
+        transform: rotate(0deg) !important;
+      }
+    }
+    .wexp-angle2 {
+      @include transform2(rotate(45deg), translate(188px, 150px));
+      @media (max-width: 1199px) {
+        -webkit-transform: rotate(0deg) translateY(-54px) !important;
+        -moz-transform: rotate(0deg) translateY(-54px) !important;
+        -ms-transform: rotate(0deg) translateY(-54px) !important;
+        -o-transform: rotate(0deg) translateY(-54px) !important;
+        transform: rotate(0deg) translateY(-54px) !important;
+      }
+    }
+    .single-block {
+      padding: 16px;
+      border: 2px solid rgba(221, 221, 221, 0.2);
+      min-height: 90px;
+      @media (max-width: 1199px) {
+        border: 0px;
+        padding: 16px 0px;
+      }
+      .single-block-outer {
+        box-shadow: 0 0 26px rgba(221, 221, 221, 0.84);
+        padding: 16px;
+        @media (max-width: 1199px) {
+          margin-bottom: 20px;
+        }
+        @media (max-width: 576px) {
+          padding: 0px;
+        }
+        .single-block-inner {
+          padding: 20px;
+          text-align: center;
+          @media (max-width: 1199px) {
+            padding: 46px 16px;
+          }
+          .e-img {
+            margin-bottom: 10px;
+            @include transform2(rotate(-45deg), translate(-70px, -57px));
+            @media (max-width: 1199px) {
+              @include transform2(rotate(0deg), translate(0px, 0px));
+            }
+          }
+          .e-head {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #333333;
+            font-weight: 700;
+            text-transform: uppercase;
+            @include transform2(rotate(-45deg), translate(-35px, -35px));
+            @media (max-width: 1199px) {
+              @include transform2(rotate(0deg), translate(0px, 0px));
+              font-size: 17px;
+            }
+          }
+          .e-sub-head {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #555555;
+            @include transform2(rotate(-45deg), translate(-10px, -24px));
+            @media (max-width: 1199px) {
+              @include transform2(rotate(0deg), translate(0px, 0px));
+            }
+          }
+          .e-para {
+            margin-bottom: 10px;
+            @include transform2(rotate(-45deg), translate(25px, 10px));
+            @media (max-width: 1199px) {
+              @include transform2(rotate(0deg), translate(0px, 0px));
+            }
+          }
+          .genric-btn2 {
+            @include transform2(rotate(-45deg), translate(78px, 68px));
+            background-repeat: no-repeat;
+            @media (max-width: 1199px) {
+              @include transform2(rotate(0deg), translate(0px, 0px));
+            }
+            border: 1px solid $primary-color;
+            text-transform: initial;
+            box-shadow: -14px 14px 21px $gray-color;
+            &:hover {
+              @extend .gradient-bg;
+              color: $white;
+              border: 1px solid $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ############# End Version1 Experience CSS ############# */
+
+/* ############# Start Version3 Experience CSS ############# */
+
+.version3 {
+  .work-expericence {
+    padding-bottom: 120px;
+    @media (max-width: 1440px) {
+      padding-bottom: 90px;
+      padding-top: 95px;
+    }
+    @media (max-width: 1024px) {
+      padding-bottom: 170px;
+    }
+    @media (max-width: 991px) {
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
+    @media (max-width: 576px) {
+      padding-bottom: 0;
+    }
+    .col-lg-9.col-md-12 {
+      @media (max-width: 1440px) {
+        margin-left: 16%;
+      }
+      @media (max-width: 1199px) {
+        margin-left: 18%;
+      }
+      @media (max-width: 991px) {
+        margin-left: 0%;
+      }
+    }
+    .heading {
+      position: relative;
+      z-index: 10;
+      line-height: 70px;
+      @media (max-width: 576px) {
+        margin-bottom: 20px;
+      }
+      @media (max-width: 1440px) {
+        margin-left: 10px;
+      }
+      @media (max-width: 1200px) {
+        margin-left: 0px;
+      }
+    }
+    .col-lg-9 {
+      @media (max-width: 1440px) {
+        flex: 0 0 85%;
+        max-width: 85%;
+      }
+      @media (max-width: 991px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .text-right {
+        @media (max-width: 1440px) {
+          text-align: center !important;
+        }
+      }
+    }
+    .designer-img {
+      position: relative;
+      z-index: 10;
+      @media (max-width: 1440px) {
+        width: 50%;
+      }
+    }
+    .left-part {
+      position: relative;
+      z-index: 2;
+      padding: 150px;
+      box-shadow: -8px 5px 30px rgba(221, 221, 221, 0.59);
+      margin-top: -555px;
+      @media (max-width: 1440px) {
+        padding: 120px 100px;
+        margin-top: -475px;
+      }
+      @media (max-width: 1024px) {
+        padding: 106px 80px;
+      }
+      @media (max-width: 991px) {
+        margin-top: 0px;
+        padding: 40px 140px;
+      }
+      @media (max-width: 576px) {
+        padding: 10px 24px !important;
+      }
+    }
+    .right-part {
+      padding: 150px;
+      background: $light-gray;
+      margin-top: 80px;
+      @media (max-width: 1440px) {
+        padding: 120px 100px;
+      }
+      @media (max-width: 991px) {
+        padding: 40px 140px 160px;
+      }
+      @media (max-width: 576px) {
+        padding: 10px 24px 120px !important;
+      }
+    }
+    .resume-content {
+      .mv-50 {
+        margin: 0;
+        text-align: center;
+      }
+      .col-lg-6 {
+        @media (max-width: 991px) {
+          padding: 0px 15px !important;
+        }
+      }
+      .resume-img {
+        width: 60%;
+      }
+      .company {
+        font-size: 24px;
+        color: $title-color;
+        font-weight: 800;
+        margin-right: 10px;
+        text-transform: uppercase;
+      }
+      .subject {
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+      }
+      .info {
+        max-width: 400px;
+        color: #555555;
+      }
+      .work-exp {
+        margin: 10px 0 50px;
+        &:last-child {
+          margin: 0px;
+        }
+        .mb-35 {
+          margin-bottom: 20px;
+        }
+      }
+      .study {
+        margin-bottom: 40px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+        .subject {
+          margin-bottom: 20px;
+        }
+        p {
+          margin: 0;
+        }
+        .title {
+          color: $title-color;
+          display: inline-block;
+          min-width: 80px;
+        }
+      }
+    }
+    .academic {
+      position: relative;
+      margin-top: -205px;
+      padding-bottom: 15px;
+      @media (max-width: 1440px) {
+        margin-top: -200px;
+      }
+      @media (max-width: 1024px) {
+        margin-top: -250px;
+      }
+      @media (max-width: 991px) {
+        margin-top: -150px;
+        margin-bottom: 0px;
+      }
+      @media (max-width: 576px) {
+        margin-top: -90px !important;
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+}
+
+/* ############# End Version3 Experience CSS ############# */
+
+/* ############# Start Version4 Experience CSS ############# */
+
+.version4 {
+  .experience-area {
+    background: #f9fcff;
+    margin-top: -50px;
+    .v-box {
+      margin-top: -120px;
+      height: 910px;
+      .text {
+        font-size: 124px;
+        top: -2%;
+        left: -81%;
+      }
+    }
+    .h-box {
+      &:after {
+        height: 21px;
+        top: 10px;
+        left: 8px;
+      }
+    }
+    .statistics {
+    }
+    .statistics-single {
+      background: $white;
+      .number {
+        font-size: 30px;
+      }
+      &:hover {
+        background: #f9fcff;
+      }
+    }
+  }
+  .education-area {
+    background: $primary-color4-1;
+    color: $white;
+    margin-top: -50px;
+    .v-box {
+      margin-top: -120px;
+      height: 890px;
+      .text {
+        font-size: 124px;
+        top: 13%;
+        right: 0%;
+        @include transform(rotate(90deg));
+      }
+    }
+    .h-box {
+      &:after {
+        height: 21px;
+        top: 10px;
+        left: 8px;
+        background: #3d0075;
+      }
+    }
+    .statistics {
+    }
+    .statistics-single {
+      background: #3d0075;
+      margin-bottom: 0;
+      .number {
+        font-size: 30px;
+      }
+      .desc {
+        margin-top: 10px;
+      }
+    }
+    .content-wrap {
+      .h-box {
+        @media (max-width: 380px) {
+          margin-top: 30px;
+          margin-bottom: 20px;
+        }
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .expert-area {
+    background: $primary-color4-1;
+    color: $white;
+    margin-top: -50px;
+    .v-box {
+      margin-top: -120px;
+      height: 930px;
+      @media (max-width: 1024px) {
+        height: 875px;
+      }
+      .text {
+        font-size: 124px;
+        top: 11%;
+        right: 0%;
+        @include transform(rotate(90deg));
+      }
+    }
+    .h-box {
+      &:after {
+        height: 21px;
+        top: 10px;
+        left: 8px;
+        background: #3d0075;
+      }
+    }
+    .bar-wrap {
+      .progress-bars {
+        text-align: left;
+        .progress-box {
+          border: 1px solid #510d90;
+          margin-bottom: 25px;
+          height: 30px;
+          position: relative;
+          border-radius: 26px;
+          width: 100%;
+        }
+        .progress {
+          width: 98%;
+          position: relative;
+          top: 15px;
+          padding-bottom: 12px;
+          height: auto;
+          border-radius: 0;
+          overflow: visible;
+          z-index: 0;
+          background: transparent;
+          margin-left: 9px;
+          border-radius: 20px;
+          &:before {
+            content: " ";
+            position: absolute;
+            left: -4px;
+            right: 0;
+            bottom: 3px;
+            height: 20px;
+            border: 2px solid #63269b;
+            border-radius: 15px;
+          }
+          &:after {
+            width: 98.6%;
+            content: " ";
+            position: absolute;
+            left: 2px;
+            right: 0;
+            bottom: 8px;
+            height: 10px;
+            background: #6d33a1;
+            border-radius: 15px;
+          }
+        }
+        h4 {
+          font-size: 14px;
+          margin-top: 12px;
+          margin-left: 28px;
+          min-width: 122px;
+          text-align: left;
+          color: $white;
+          @media (max-width: 576px) {
+            margin-left: -100px;
+            margin-top: 30px;
+          }
+        }
+        .progress-bar {
+          float: none;
+          position: absolute;
+          top: auto;
+          left: 2px;
+          right: 0;
+          bottom: 8px;
+          height: 10px;
+          background-color: $primary-color4-2;
+          font-size: 0;
+          line-height: 0;
+          box-shadow: none;
+          border-radius: 20px;
+          z-index: 2;
+        }
+      }
+    }
+    .statistics {
+    }
+    .statistics-single {
+      background: #3d0075;
+      .number {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/* ############# End Version4 Experience CSS ############# */
+
+/* ############# Start Version5 Experience CSS ############# */
+
+.version5 {
+  .experience-area {
+    margin-top: -380px;
+    padding-top: 120px;
+    background: url(../img/grid5-1.png) no-repeat;
+    background-position: 59% 51%;
+    .col-lg-4.md-mr {
+      @media (max-width: 1440px) and (min-width: 992px) {
+        margin-left: 90px;
+      }
+    }
+    .left-side {
+      margin-top: -300px;
+      @media (max-width: 991px) {
+        margin-top: 320px;
+      }
+    }
+    .resume-content {
+      .company {
+        font-size: 24px;
+        color: $title-color;
+        font-weight: 800;
+        margin-right: 10px;
+        text-transform: uppercase;
+      }
+      .subject {
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+      }
+      .info {
+        max-width: 400px;
+        color: #555555;
+      }
+      .study {
+        margin-bottom: 40px;
+        .subject {
+          margin-bottom: 20px;
+        }
+        p {
+          margin: 0;
+        }
+        .title {
+          color: $title-color;
+          display: inline-block;
+          min-width: 80px;
+        }
+      }
+    }
+  }
+}
+
+/* ############# End Version5 Experience CSS ############# */

@@ -1,0 +1,197 @@
+/*--------------------------------------------------------------
+# Responsive CSS
+--------------------------------------------------------------*/
+
+// ##### Max Width 1440 And Min Width 1200px ##### //
+@media (max-width: 1440px) and (min-width: 1200px) {
+    .version4 {
+        .banner-area {
+            .container {
+                .col-lg-3 {
+                    max-width: 20%;
+                    .v-box {
+                        .text {
+                            font-size: 124px;
+                            top: 13%;
+                            left: 3%;
+                        }
+                    }
+                }
+                .col-lg-8 {
+                    max-width: 51%;
+                }
+            }
+        }
+    }
+}
+
+// ##### Max Width 1024 And Min Width 992px ##### //
+@media (max-width: 1024px) and (min-width: 992px) {
+    body.version4 {
+        font-size: 14px;
+        padding: 0px;
+    }
+    .version4 {
+        .banner-area {
+            .container {
+                .col-lg-3 {
+                    max-width: 20%;
+                    .v-box {
+                        .text {
+                            font-size: 100px;
+                            top: 13%;
+                            left: 3%;
+                        }
+                    }
+                }
+                .col-lg-8 {
+                    max-width: 51%;
+                }
+            }
+        }
+        .experience-area {
+            .v-box {
+                .text {
+                    font-size: 100px;
+                    top: 8%;
+                }
+            }
+            .statistics-single {
+                .number {
+                    font-size: 21px;
+                }
+            }
+        }
+        .education-area {
+            .v-box {
+                .text {
+                    font-size: 100px;
+                    top: 20%;
+                    right: -6%;
+                }
+            }
+            .statistics-single {
+                .number {
+                    font-size: 23px;
+                }
+            }
+        }
+        .services-area {
+            .v-box {
+                .text {
+                    font-size: 100px;
+                    top: 19%;
+                }
+            }
+        }
+        .expert-area {
+            .v-box {
+                .text {
+                    font-size: 100px;
+                    top: 19%;
+                    right: -6%;
+                }
+            }
+            .statistics-single {
+                padding: 32px;
+            }
+        }
+        .client-area {
+            .v-box {
+                .text {
+                    font-size: 100px;
+                    top: 20%;
+                    left: -29%;
+                }
+            }
+            .statistics-single {
+                .star {
+                    margin-left: 0;
+                }
+            }
+        }
+        .footer-area {
+            margin-top: -46px !important;
+        }
+    }
+}
+
+// ##### Max Width 991 ##### //
+@media (max-width: 991px) {
+    body.version4 {
+        font-size: 14px;
+        padding: 0px;
+    }
+    .version4 {
+        .banner-area {
+            .v-box {
+                height: 0px !important;
+                @media (max-width: 768px) {
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+        }
+        .about-area {
+            padding-bottom: 30px;
+            .container {
+                >.row {
+                    .col-lg-4 {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .experience-area {
+            padding-bottom: 44px;
+            margin-top: 0;
+        }
+        .education-area {
+            padding-bottom: 60px;
+            margin-top: 0;
+            .container {
+                >.row {
+                    @include flex-direction(column-reverse);
+                }
+            }
+            .statistics-single {
+                margin-bottom: 25px;
+            }
+        }
+        .services-area {
+            padding-bottom: 60px;
+            margin-top: 0;
+            .quote-form {
+                .col-lg-4 {
+                    padding: 0px 15px;
+                }
+            }
+        }
+        .expert-area {
+            padding-bottom: 30px;
+            margin-top: 0;
+            .container {
+                >.row {
+                    @include flex-direction(column-reverse);
+                }
+            }
+        }
+        .client-area {
+            padding-bottom: 30px;
+            margin-top: 0;
+        }
+        .footer-area {
+            margin-top: 0px !important;
+        }
+    }
+}
+
+// ##### Max Width 575 ##### //
+body.version4 {
+    @media (max-width: 575px) {
+        .col-lg-4 {
+            padding-right: 0;
+        }
+    }
+}

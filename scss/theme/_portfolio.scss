@@ -1,0 +1,235 @@
+/*--------------------------------------------------------------
+# Portfolio CSS
+--------------------------------------------------------------*/
+
+/* ############# Start Version1 Portfolio1 CSS ############# */
+
+.version1 {
+  .portfolio-area {
+    padding: 120px 0px 90px;
+    @media (max-width: 991px) {
+      padding: 0px 0px 30px;
+    }
+    .heading {
+      margin-bottom: 20px;
+      line-height: 56px;
+    }
+    .single-img {
+      background: #f9f9ff;
+      padding: 24px;
+      @include transition();
+      margin-bottom: 30px;
+      text-align: center;
+      &:hover {
+        background: $white;
+        box-shadow: -8px 8px 20px #ebebeb;
+      }
+      .mt-80,
+      .mt-40 {
+        @media (max-width: 991px) {
+          margin-top: 0px;
+        }
+      }
+    }
+    .filters {
+      text-align: center;
+      @media (max-width: 991px) {
+        margin-bottom: 20px;
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          display: inline-block;
+          padding: 18px 30px;
+          cursor: pointer;
+          position: relative;
+          text-transform: uppercase;
+          color: #222;
+          font-size: 14px;
+          font-weight: 700;
+          @include transition();
+          @media (max-width: 992px) {
+            padding: 18px 15px;
+          }
+          @media (max-width: 736px) {
+            padding: 6px 6px;
+          }
+          &:hover,
+          &.active {
+            color: $primary-color2-2;
+          }
+        }
+      }
+    }
+    .filters-content {
+      margin-top: 50px;
+      @media (max-width: 991px) {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+/* ############# End Version1 Portfolio1 CSS ############# */
+
+/* ############# Start Version3 Portfolio3 CSS ############# */
+
+.version3 {
+  .portfolio-area {
+    padding-bottom: 70px;
+    @media (max-width: 1440px) {
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-bottom: 30px;
+      padding-top: 95px;
+      padding-bottom: 25px;
+    }
+    @media (max-width: 1024px) {
+      margin-bottom: 0px;
+      padding-bottom: 40px;
+      padding-top: 60px;
+    }
+    .heading {
+      line-height: 70px;
+    }
+    .filters {
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+      }
+      ul {
+        li {
+          font-size: 14px;
+          padding: 18px 28px;
+          @media (max-width: 576px) {
+            font-size: 12px;
+            padding: 20px 5px;
+          }
+          @media (max-width: 480px) {
+            padding: 0px 5px;
+          }
+          &:after {
+            content: none;
+          }
+        }
+      }
+    }
+    .single-img {
+      padding: 0;
+      background: transparent;
+      margin-bottom: 50px;
+      text-align: center;
+      h4 {
+        font-size: 18px;
+        @include transition();
+      }
+      img {
+        @include transition();
+        @media (max-width: 767px) {
+          margin-top: 0;
+        }
+      }
+      &:hover {
+        box-shadow: none;
+        img {
+          box-shadow: -10px 10px 20px #aeaeae;
+        }
+        h4 {
+          color: $primary-color3-2;
+        }
+      }
+    }
+    .filters {
+      text-align: center;
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          display: inline-block;
+          padding: 18px 30px;
+          cursor: pointer;
+          position: relative;
+          text-transform: uppercase;
+          color: #222;
+          font-size: 14px;
+          font-weight: 700;
+          @include transition();
+          @media (max-width: 992px) {
+            padding: 18px 15px;
+          }
+          @media (max-width: 736px) {
+            padding: 6px 6px;
+          }
+          &:hover,
+          &.active {
+            color: $primary-color2-2;
+          }
+        }
+      }
+    }
+    .filters-content {
+      margin-top: 50px;
+      @media (max-width: 991px) {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+/* ############# End Version3 Portfolio3 CSS ############# */
+
+/* ############# Start Version1 Portfolio5 CSS ############# */
+
+.version5 {
+  .portfolio-area {
+    background: url(../img/grid5-1.png) no-repeat;
+    background-position: 43.5% 89%;
+    @media (max-width: 1440px) {
+      background-position: 43.5% 72%;
+    }
+    .row-reverse {
+      @media (max-width: 991px) {
+        @include flex-direction(column-reverse);
+      }
+    }
+    .right-side {
+      margin-top: -30px;
+      @media (max-width: 991px) {
+        margin-top: 0px;
+      }
+    }
+    .single-project {
+      margin-bottom: 80px;
+      @media (max-width: 991px) {
+        margin-top: 50px;
+      }
+      .head {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 18px;
+        line-height: 16px;
+        a {
+          color: $title-color;
+          &:hover {
+            color: $primary-color5-2;
+          }
+        }
+      }
+      .info {
+        max-width: 525px;
+      }
+      .project {
+        margin-bottom: 20px;
+        span {
+          color: $title-color;
+          font-weight: 600;
+          text-transform: uppercase;
+          display: inline-block;
+          min-width: 230px;
+        }
+      }
+    }
+  }
+}
+
+/* ############# End Version1 Portfolio5 CSS ############# */

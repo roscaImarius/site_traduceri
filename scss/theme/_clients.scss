@@ -1,0 +1,248 @@
+/*--------------------------------------------------------------
+# Clients CSS
+--------------------------------------------------------------*/
+
+.single-review {
+  background: $white;
+  padding: 70px 50px;
+  box-shadow: -15px 15px 25px rgba(174, 174, 174, 0.2);
+  margin-left: 30px;
+  margin-bottom: 80px;
+  @media (max-width: 991px) {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 35px 25px 50px;
+  }
+  .quote {
+    width: 34px !important;
+    height: 32px;
+    margin-bottom: 30px;
+  }
+  .title {
+    h4 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      a {
+        color: $title-color;
+      }
+    }
+  }
+  .star {
+    .text {
+      margin-right: 20px;
+      font-weight: 300;
+    }
+    .checked {
+      color: orange;
+    }
+  }
+}
+
+/* ############# Start Version3 Client CSS ############# */
+
+.version3 {
+  //--------- Start feature Area -------------//
+  .review-area {
+    background-color: $offwhite;
+    @media (max-width: 1440px) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .heading {
+      line-height: 80px;
+    }
+    .owl-carousel .owl-item img {
+      width: auto !important;
+    }
+    .client {
+      background: url(../img/client/client-bg3.png) no-repeat center;
+      background-size: contain;
+    }
+  }
+  .owl-dots {
+    @include flexbox();
+    @include justify-content(center);
+    position: relative;
+    @include transition();
+    @media (max-width: 991px) {
+      display: none !important;
+    }
+    &:after {
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 20%;
+      height: 5px;
+      background: $white;
+      z-index: -1;
+      @include transition();
+    }
+    .owl-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: $white;
+      margin: 0 50px;
+      @include transition();
+      @media (max-width: 767px) {
+        margin: 0 15px;
+      }
+      &.active {
+        background: $primary-color3-1;
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+        position: relative;
+        &:after {
+          content: "";
+          left: 50%;
+          top: 50%;
+          position: absolute;
+          width: 110px;
+          height: 4px;
+          background: $primary-color3-1;
+          @include transform(translate(-50%, -50%));
+          @include transition();
+        }
+      }
+    }
+  }
+}
+
+/* ############# End Version3 Client CSS ############# */
+
+/* ############# Start Version4 Client CSS ############# */
+
+.version4 {
+  .client-area {
+    margin-top: -50px;
+    background: $white;
+    .v-box {
+      margin-top: -120px;
+      height: 920px;
+      @media (max-width: 1024px) {
+        height: 880px;
+      }
+      .text {
+        font-size: 124px;
+        top: 14%;
+        left: -26%;
+      }
+    }
+    .statistics-single {
+      padding: 40px 30px;
+      position: relative;
+      .single-feedback-carusel {
+        h4 {
+          font-size: 24px;
+          font-weight: 600;
+        }
+      }
+      .star {
+        margin-left: 20px;
+        .checked {
+          color: orange;
+        }
+      }
+      .number {
+        img {
+          @include filter(grayscale, 100%);
+          @include transition();
+        }
+      }
+      &:hover {
+        .number {
+          img {
+            @include filter(grayscale, 0%);
+          }
+        }
+      }
+    }
+  }
+  .owl-nav-img {
+    position: absolute;
+    right: -102px;
+    top: 126px;
+    @media (max-width: 1440px) {
+      right: -42px;
+    }
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+  .owl-nav {
+    position: absolute;
+    right: -100px;
+    top: 111px;
+    @media (max-width: 1440px) {
+      right: -40px;
+    }
+    @media (max-width: 1024px) {
+      display: none;
+    }
+    .owl-prev,
+    .owl-next {
+      margin-bottom: 10px;
+      color: $title-color;
+      font-weight: 800;
+      opacity: 0.6;
+      @include transition();
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .owl-prev {
+      position: relative;
+      top: -8px;
+    }
+    .owl-next {
+      position: relative;
+      top: 8px;
+    }
+  }
+}
+
+/* ############# End Version4 Client CSS ############# */
+
+/* ############# Start Version5 Client CSS ############# */
+
+.version5 {
+  .client-area {
+    @media (max-width: 1440px) and (min-width: 992px) {
+      margin-top: -180px;
+      padding-top: 0;
+    }
+    &.section-gap-top-5 {
+      padding-top: 0;
+      @media (max-width: 991px) {
+        padding-bottom: 50px;
+      }
+    }
+    .col-lg-4.md-mr {
+      @media (max-width: 1440px) and (min-width: 992px) {
+        margin-left: 90px;
+      }
+    }
+    .left-side {
+      margin-top: -650px;
+      @media (max-width: 991px) {
+        margin-top: 0px;
+      }
+    }
+    .owl-dots {
+      .owl-dot {
+        &:after {
+          width: 75%;
+        }
+        &.active {
+          &:after {
+            width: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ############# End Version5 Client CSS ############# */
